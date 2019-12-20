@@ -2,7 +2,6 @@ package Handlers;
 
 import Main.LPanel;
 
-import java.awt.*;
 import java.awt.event.MouseEvent;
 
 public class RectHandler extends Handler {
@@ -23,11 +22,16 @@ public class RectHandler extends Handler {
         yEnd = e.getY();
 
         g = panel.getGraphics();
+
         g.setColor(color);
 
-        width = xEnd - xStart;
-        height = yEnd - yStart;
-        g.fillRect(xStart, yStart, xEnd - xStart, yEnd - yStart);
+        width = Math.abs(xEnd - xStart);
+        height = Math.abs(yEnd - yStart);
+
+        xStart = Math.min(xStart, xEnd);
+        yStart = Math.min(yStart, yEnd);
+
+        g.fillRect(xStart, yStart, width, height);
 
         g.setColor(colorFill);
         width -= (2*lineWidth);

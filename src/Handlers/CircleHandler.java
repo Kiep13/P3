@@ -2,12 +2,11 @@ package Handlers;
 
 import Main.LPanel;
 
-import java.awt.*;
 import java.awt.event.MouseEvent;
 
 public class CircleHandler extends Handler {
 
-    int width, height;
+    private int width, height;
 
     public CircleHandler(LPanel panel) {
         super(panel);
@@ -26,8 +25,12 @@ public class CircleHandler extends Handler {
 
         g.setColor(color);
 
-        width = xEnd - xStart;
-        height = yEnd - yStart;
+        width = Math.abs(xEnd - xStart);
+        height = Math.abs(yEnd - yStart);
+
+        xStart = Math.min(xStart, xEnd);
+        yStart = Math.min(yStart, yEnd);
+
         g.fillOval(xStart, yStart, width, height);
 
         g.setColor(colorFill);
