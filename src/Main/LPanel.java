@@ -7,6 +7,7 @@ import java.awt.*;
 
 public class LPanel extends JPanel {
 
+    public Graphics g;
     private Handler handler;
 
     public LPanel() {
@@ -59,5 +60,6 @@ public class LPanel extends JPanel {
     public void setLineWidth(int value) {
         Handler.setLineWidth(value);
     }
+
 
 }

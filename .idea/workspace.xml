@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a921d3f9-80ab-4c74-9e62-5e8fd7c037c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/SpectrumHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/SpectrumHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Painter/Main/LPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Painter/Main/LPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/LPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/LPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Program.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +29,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programming/Java/Labyrinth" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programming/Java/Diary 2.0" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -74,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576824857648</updated>
-      <workItem from="1576824864787" duration="16256000" />
+      <workItem from="1576824864787" duration="17691000" />
     </task>
     <servers />
   </component>
@@ -91,41 +92,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/LPanel.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/LPanel.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/LPanel.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/LPanel.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/LPanel.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/LPanel.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

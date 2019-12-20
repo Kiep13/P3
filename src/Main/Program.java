@@ -2,8 +2,7 @@ package Main;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
 public class Program {
 
@@ -57,6 +56,18 @@ public class Program {
         frame.revalidate();
         frame.repaint();
 
+        frame.addComponentListener(new ComponentAdapter() {
+
+            public void componentResized(ComponentEvent e) {
+
+            }
+
+            public void componentMoved(ComponentEvent e) {
+
+            }
+
+        });
+
     }
 
     public JMenu createFigureMenu() {
@@ -109,13 +120,22 @@ public class Program {
 
         JMenu lineMenu = new JMenu("Линия");
 
-        JSlider slider = new JSlider(SwingConstants.VERTICAL, 0, 15, 1);
+        JSlider slider = new JSlider(SwingConstants.HORIZONTAL, 1, 15, 1);
+
+        JLabel currentSize = new JLabel(" 1");
+        currentSize.setOpaque(false);
+
         slider.addChangeListener(arg0 -> {
             int value = slider.getValue();
             panel.setLineWidth(value);
+            currentSize.setText(String.valueOf(value));
         });
 
+
+
+
         lineMenu.add(slider);
+        lineMenu.add(currentSize);
 
         return lineMenu;
 
