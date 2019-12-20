@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a921d3f9-80ab-4c74-9e62-5e8fd7c037c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Handlers/BrushHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/BrushHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Handlers/CircleHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/CircleHandler.java" afterDir="false" />
@@ -81,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576824857648</updated>
-      <workItem from="1576824864787" duration="11792000" />
+      <workItem from="1576824864787" duration="13845000" />
     </task>
     <servers />
   </component>

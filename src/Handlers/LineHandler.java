@@ -2,6 +2,7 @@ package Handlers;
 
 import Main.LPanel;
 
+import java.awt.*;
 import java.awt.event.MouseEvent;
 
 public class LineHandler extends Handler {
@@ -23,6 +24,7 @@ public class LineHandler extends Handler {
 
         g = panel.getGraphics();
         g.setColor(color);
+        ((Graphics2D) g).setStroke(new BasicStroke(lineWidth));
         g.drawLine(xStart, yStart, xEnd, yEnd);
     }
 

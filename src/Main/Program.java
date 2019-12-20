@@ -46,13 +46,10 @@ public class Program {
 
         JMenuBar menu = new JMenuBar();
 
-        JMenu lineMenu = new JMenu("Линия");
-        JMenu fillColorMenu = new JMenu("Цвет заливки");
-
         menu.add(createFigureMenu());
-        menu.add(lineMenu);
+        menu.add(createLineMenu());
         menu.add(createColorMenu());
-        menu.add(fillColorMenu);
+        menu.add(createFillColorMenu());
 
         menu.setBackground(Color.white);
 
@@ -106,6 +103,22 @@ public class Program {
         figureMenu.add(spect);
 
         return figureMenu;
+
+    }
+
+    public JMenu createLineMenu() {
+
+        JMenu lineMenu = new JMenu("Линия");
+
+        JSlider slider = new JSlider(SwingConstants.VERTICAL, 0, 15, 1);
+        slider.addChangeListener(arg0 -> {
+            int value = slider.getValue();
+            panel.setLineWidth(value);
+        });
+
+        lineMenu.add(slider);
+
+        return lineMenu;
 
     }
 

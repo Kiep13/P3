@@ -20,8 +20,9 @@ public class LPanel extends JPanel {
         setBackground(Color.white);
         BrushHandler handler = new BrushHandler(panel);
 
-        handler.setColor(Color.BLACK);
-        handler.setColorFill(Color.WHITE);
+        Handler.setColor(Color.BLACK);
+        Handler.setColorFill(Color.WHITE);
+        Handler.setLineWidth(1);
 
         this.addMouseListener(handler);
         this.addMouseMotionListener(handler);
@@ -48,12 +49,15 @@ public class LPanel extends JPanel {
     }
 
     public void setColor(Color color) {
-        System.out.print(color);
-        handler.setColor(color);
+        Handler.setColor(color);
     }
 
     public void setColorFill(Color colorFill) {
-        handler.setColorFill(colorFill);
+        Handler.setColorFill(colorFill);
+    }
+
+    public void setLineWidth(int value) {
+        Handler.setLineWidth(value);
     }
 
 }

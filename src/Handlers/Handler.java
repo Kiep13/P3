@@ -9,6 +9,7 @@ public abstract class Handler extends MouseAdapter {
 
     protected static Color color;
     protected static Color colorFill;
+    protected static int lineWidth;
 
     protected LPanel panel;
     protected int xStart, yStart, xEnd, yEnd;
@@ -27,6 +28,8 @@ public abstract class Handler extends MouseAdapter {
         color = choosedColor;
     }
 
-
+    public static void setLineWidth(int value) {
+        lineWidth = value;
+    }
 
 }
