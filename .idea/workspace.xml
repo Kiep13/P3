@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a921d3f9-80ab-4c74-9e62-5e8fd7c037c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/BrushHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/BrushHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/CircleHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/CircleHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/LineHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/LineHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/RectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/RectHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/SpectrumHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/SpectrumHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/LPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/LPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Program.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +26,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programming/Java/Diary 2.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programming/Java/Labyrinth" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -80,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576824857648</updated>
-      <workItem from="1576824864787" duration="13845000" />
+      <workItem from="1576824864787" duration="14458000" />
     </task>
     <servers />
   </component>
