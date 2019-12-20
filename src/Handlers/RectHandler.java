@@ -2,7 +2,6 @@ package Handlers;
 
 import Main.LPanel;
 
-import java.awt.*;
 import java.awt.event.MouseEvent;
 
 public class RectHandler extends Handler {
@@ -21,7 +20,7 @@ public class RectHandler extends Handler {
         yEnd = e.getY();
 
         g = panel.getGraphics();
-        g.setColor(Color.GREEN);
+        g.setColor(color);
         g.fillRect(xStart, yStart, xEnd - xStart, yEnd - yStart);
     }
 

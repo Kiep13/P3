@@ -1,8 +1,6 @@
 package Handlers;
 
 import Main.LPanel;
-
-import java.awt.*;
 import java.awt.event.MouseEvent;
 
 public class BrushHandler extends Handler {
@@ -24,7 +22,7 @@ public class BrushHandler extends Handler {
         this.yStart = e.getY();
 
         g = panel.getGraphics();
-        g.setColor(Color.GREEN);
+        g.setColor(color);
         g.drawLine(xStart, yStart, xEnd, yEnd);
 
         xEnd = xStart;

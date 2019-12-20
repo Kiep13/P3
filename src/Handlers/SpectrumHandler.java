@@ -2,8 +2,6 @@ package Handlers;
 
 import Main.LPanel;
 
-import java.awt.*;
-import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class SpectrumHandler extends Handler {
@@ -15,8 +13,6 @@ public class SpectrumHandler extends Handler {
     public void mousePressed(MouseEvent e) {
         xStart = e.getX();
         yStart = e.getY();
-
-
     }
 
     public void mouseDragged(MouseEvent e) {
@@ -24,7 +20,7 @@ public class SpectrumHandler extends Handler {
         yEnd = e.getY();
 
         g = panel.getGraphics();
-        g.setColor(Color.GREEN);
+        g.setColor(color);
         g.drawLine(xStart, yStart, xEnd, yEnd);
     }
 
