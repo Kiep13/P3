@@ -7,6 +7,8 @@ import java.awt.event.MouseEvent;
 
 public class SpectrumHandler extends Handler {
 
+    int xHelp, yHelp;
+
     public SpectrumHandler(LPanel panel) {
         super(panel);
     }
@@ -14,6 +16,9 @@ public class SpectrumHandler extends Handler {
     public void mousePressed(MouseEvent e) {
         xStart = e.getX();
         yStart = e.getY();
+
+        xHelp = this.xStart;
+        yHelp = this.yStart;
     }
 
     public void mouseDragged(MouseEvent e) {
@@ -24,6 +29,10 @@ public class SpectrumHandler extends Handler {
         g.setColor(color);
         ((Graphics2D) g).setStroke(new BasicStroke(lineWidth));
         g.drawLine(xStart, yStart, xEnd, yEnd);
+        g.drawLine(xEnd, yEnd, xHelp, yHelp);
+
+        xHelp = xEnd;
+        yHelp = yEnd;
     }
 
 }

@@ -18,7 +18,7 @@ public class LPanel extends JPanel {
     public void setStartSettings(LPanel panel) {
 
         setBackground(Color.white);
-        BrushHandler handler = new BrushHandler(panel);
+        handler = new BrushHandler(panel);
 
         Handler.setColor(Color.BLACK);
         Handler.setColorFill(Color.WHITE);
