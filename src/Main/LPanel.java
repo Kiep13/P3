@@ -5,13 +5,13 @@ import Handlers.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class LPanel extends JPanel {
 
     public static BufferedImage paint;
+
 
     public Graphics g;
     private Handler handler;
@@ -82,13 +82,10 @@ public class LPanel extends JPanel {
         Point p = new Point(0, 0);
         SwingUtilities.convertPointToScreen(p, panel);
 
-        //Get the region with wiht and heighht of panel and
-        // starting coordinates of p.x and p.y
         Rectangle region = panel.getBounds();
         region.x = p.x;
         region.y = p.y;
 
-        //Get screen capture over the area of region
         paint = null;
         try {
             paint = new Robot().createScreenCapture( region );
@@ -97,15 +94,14 @@ public class LPanel extends JPanel {
         }
     }
 
+    public void clean() {
 
+        Graphics g = this.getGraphics();
+        g.setColor(Color.WHITE);
+        g.fillRect(0, 0, this.getWidth(), this.getHeight());
 
-    public void getScreenShot(JPanel panel) throws IOException {
-        paint = new BufferedImage(panel.getWidth(), panel.getHeight(), BufferedImage.TYPE_INT_ARGB);
-        panel.paint(paint.getGraphics());
-        Graphics2D g2 = paint.createGraphics();
-        g2.drawImage(paint, null, null);
+        createImage(this);
 
-        JOptionPane.showMessageDialog(null, new JLabel(new ImageIcon(paint)));
     }
 
 }

@@ -1,8 +1,11 @@
 package Main;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
+import java.io.IOException;
 
 public class Program {
 
@@ -44,6 +47,7 @@ public class Program {
 
         JMenuBar menu = new JMenuBar();
 
+        menu.add(createFileMenu());
         menu.add(createFigureMenu());
         menu.add(createLineMenu());
         menu.add(createColorMenu());
@@ -56,18 +60,43 @@ public class Program {
         frame.revalidate();
         frame.repaint();
 
-        frame.addComponentListener(new ComponentAdapter() {
 
-            public void componentResized(ComponentEvent e) {
+        panel.clean();
 
+    }
+
+    public JMenu createFileMenu() {
+
+        JMenu fileMenu = new JMenu("Файл");
+
+        JMenuItem clean = new JMenuItem("Очистить");
+        JMenuItem open = new JMenuItem("Открыть");
+        JMenuItem save = new JMenuItem("Сохранить");
+
+        clean.addActionListener(e -> panel.clean());
+
+        save.addActionListener(e -> {
+            try {
+                this.saveFile();
+            } catch (IOException ex) {
+                ex.printStackTrace();
             }
-
-            public void componentMoved(ComponentEvent e) {
-
-            }
-
         });
 
+        open.addActionListener(e -> {
+            try {
+                this.openFile();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        });
+
+        fileMenu.add(clean);
+        fileMenu.add(new JSeparator());
+        fileMenu.add(open);
+        fileMenu.add(save);
+
+        return fileMenu;
     }
 
     public JMenu createFigureMenu() {
@@ -169,6 +198,47 @@ public class Program {
         fillColorMenu.add(chooser);
 
         return fillColorMenu;
+
+    }
+
+    public void openFile() throws IOException {
+
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setDialogTitle("Открытие файла");
+
+        fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        int result = fileChooser.showSaveDialog(panel);
+
+        if (result == JFileChooser.APPROVE_OPTION ) {
+
+            String fileName = fileChooser.getSelectedFile().toString();
+            File inputFile = new File(fileName);
+
+            panel.paint = ImageIO.read(inputFile);
+            Graphics g = panel.getGraphics();
+            g.drawImage(panel.paint, 0, 0, panel.paint.getWidth(), panel.paint.getHeight(), null);
+        }
+
+    }
+
+    public void saveFile() throws IOException {
+
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setDialogTitle("Сохранение файла");
+
+        fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        int result = fileChooser.showSaveDialog(panel);
+
+        if (result == JFileChooser.APPROVE_OPTION ) {
+
+            String fileName = fileChooser.getSelectedFile().toString();
+            File outputfile = new File(fileName);
+
+            String expansion = fileName.substring(fileName.lastIndexOf(".") + 1);
+
+            ImageIO.write(panel.paint, expansion, outputfile);
+            JOptionPane.showMessageDialog(panel, "Файл '" + fileChooser.getSelectedFile() + " сохранен");
+        }
 
     }
 

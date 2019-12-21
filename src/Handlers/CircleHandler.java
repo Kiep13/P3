@@ -3,7 +3,6 @@ package Handlers;
 import Main.LPanel;
 
 import java.awt.event.MouseEvent;
-import java.io.IOException;
 
 public class CircleHandler extends Handler {
 

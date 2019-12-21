@@ -4,7 +4,6 @@ import Main.LPanel;
 
 import java.awt.*;
 import java.awt.event.MouseEvent;
-import java.io.IOException;
 
 public class LineHandler extends Handler {
 
