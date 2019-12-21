@@ -4,14 +4,24 @@ import Handlers.*;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class LPanel extends JPanel {
 
+    public static BufferedImage paint;
+
     public Graphics g;
     private Handler handler;
+    private JLabel label;
 
     public LPanel() {
 
+        paint = new BufferedImage(100, 100, BufferedImage.TYPE_INT_ARGB);
+        label = new JLabel();
+        label.setLocation(0,0);
         setStartSettings(this);
 
     }
@@ -61,5 +71,41 @@ public class LPanel extends JPanel {
         Handler.setLineWidth(value);
     }
 
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        if (paint != null) {
+            g.drawImage(paint, 0, 0, paint.getWidth(), paint.getHeight(), null);
+        }
+    }
+
+    public static void createImage(LPanel panel) {
+        Point p = new Point(0, 0);
+        SwingUtilities.convertPointToScreen(p, panel);
+
+        //Get the region with wiht and heighht of panel and
+        // starting coordinates of p.x and p.y
+        Rectangle region = panel.getBounds();
+        region.x = p.x;
+        region.y = p.y;
+
+        //Get screen capture over the area of region
+        paint = null;
+        try {
+            paint = new Robot().createScreenCapture( region );
+        } catch (AWTException ex) {
+            Logger.getLogger(LPanel.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+
+
+    public void getScreenShot(JPanel panel) throws IOException {
+        paint = new BufferedImage(panel.getWidth(), panel.getHeight(), BufferedImage.TYPE_INT_ARGB);
+        panel.paint(paint.getGraphics());
+        Graphics2D g2 = paint.createGraphics();
+        g2.drawImage(paint, null, null);
+
+        JOptionPane.showMessageDialog(null, new JLabel(new ImageIcon(paint)));
+    }
 
 }

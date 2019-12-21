@@ -33,6 +33,8 @@ public class SpectrumHandler extends Handler {
 
         xHelp = xEnd;
         yHelp = yEnd;
+
+        panel.createImage(panel);
     }
 
 }

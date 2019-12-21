@@ -30,5 +30,7 @@ public class BrushHandler extends Handler {
 
         xEnd = xStart;
         yEnd = yStart;
+
+        panel.createImage(panel);
     }
 }

@@ -3,6 +3,7 @@ package Handlers;
 import Main.LPanel;
 
 import java.awt.event.MouseEvent;
+import java.io.IOException;
 
 public class RectHandler extends Handler {
 
@@ -37,6 +38,8 @@ public class RectHandler extends Handler {
         width -= (2*lineWidth);
         height -= (2*lineWidth);
         g.fillRect(xStart + lineWidth, yStart + lineWidth, width, height);
+
+        panel.createImage(panel);
     }
 
 }

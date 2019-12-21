@@ -4,6 +4,7 @@ import Main.LPanel;
 
 import java.awt.*;
 import java.awt.event.MouseEvent;
+import java.io.IOException;
 
 public class LineHandler extends Handler {
 
@@ -23,9 +24,12 @@ public class LineHandler extends Handler {
         yEnd = e.getY();
 
         g = panel.getGraphics();
+        panel.
         g.setColor(color);
         ((Graphics2D) g).setStroke(new BasicStroke(lineWidth));
         g.drawLine(xStart, yStart, xEnd, yEnd);
+
+        panel.createImage(panel);
     }
 
 }

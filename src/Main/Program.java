@@ -18,9 +18,9 @@ public class Program {
     public Program () {
 
         JFrame frame = new JFrame("Painter");
-        frame.setSize(500, 500);
+        frame.setSize(1000, 900);
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
-        frame.setLocation(dimension.width/2 - 250, dimension.height/2 - 250);
+        frame.setLocation(dimension.width/2 - 500, dimension.height/2 - 450);
         frame.setVisible(true);
 
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -131,9 +131,6 @@ public class Program {
             currentSize.setText(String.valueOf(value));
         });
 
-
-
-
         lineMenu.add(slider);
         lineMenu.add(currentSize);
 
@@ -149,7 +146,6 @@ public class Program {
 
         chooser.getSelectionModel().addChangeListener(arg0 -> {
             Color color = chooser.getColor();
-            System.out.print(color);
             panel.setColor(color);
         });
 

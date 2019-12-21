@@ -3,8 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="a921d3f9-80ab-4c74-9e62-5e8fd7c037c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Painter/Handlers/BrushHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Painter/Handlers/BrushHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Painter/Handlers/CircleHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Painter/Handlers/CircleHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Painter/Handlers/LineHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Painter/Handlers/LineHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Painter/Handlers/RectHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Painter/Handlers/RectHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Painter/Handlers/SpectrumHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Painter/Handlers/SpectrumHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Painter/Main/LPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Painter/Main/LPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Painter/Main/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Painter/Main/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handlers/BrushHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/BrushHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Handlers/CircleHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/CircleHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handlers/LineHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/LineHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Handlers/RectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/RectHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handlers/SpectrumHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/SpectrumHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/LPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/LPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Program.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +86,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576824857648</updated>
-      <workItem from="1576824864787" duration="18718000" />
+      <workItem from="1576824864787" duration="24753000" />
+      <workItem from="1576907687326" duration="5257000" />
     </task>
     <servers />
   </component>
@@ -86,7 +99,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
